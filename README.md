@@ -1,5 +1,7 @@
 # App
 
+- [ ] Configurar ESlint
+
 Gympass style app.
 
 ## RFs (Requisitos funcionais)
