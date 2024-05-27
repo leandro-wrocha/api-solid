@@ -1,0 +1,28 @@
+{
+  "name": "api-solid",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Leandro Rocha <leandro.wrocha98@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start:dev": "tsx watch src/server.ts",
+    "start": "node build/server.js",
+    "build": "tsup src --out-dir build"
+  },
+  "devDependencies": {
+    "@eslint/js": "9.3.0",
+    "@rocketseat/eslint-config": "2.2.2",
+    "@types/node": "20.12.12",
+    "eslint": "9.x",
+    "globals": "15.3.0",
+    "tsup": "8.0.2",
+    "tsx": "4.11.0",
+    "typescript": "5.4.5",
+    "typescript-eslint": "7.11.0"
+  },
+  "dependencies": {
+    "dotenv": "16.4.5",
+    "fastify": "4.27.0",
+    "zod": "3.23.8"
+  }
+}
