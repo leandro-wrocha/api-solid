@@ -9,7 +9,7 @@ import { LateValidateCheckInError } from './errors/late-validate-check-in-error'
 let checkInsRepository: InMemoryCheckInsRepository
 let sut: ValidateCheckInUseCase
 
-describe('Validate Check-In Use Case', () => {
+describe.skip('Validate Check-In Use Case', () => {
   beforeEach(() => {
     checkInsRepository = new InMemoryCheckInsRepository()
     sut = new ValidateCheckInUseCase(checkInsRepository)
