@@ -1,9 +1,9 @@
 import { FastifyInstance } from 'fastify'
 
-import { register } from './controllers/register'
-import { authenticate } from './controllers/authenticate'
-import { profile } from './controllers/profile'
-import { verifyJWT } from './middlewares/verify-jwt'
+import { register } from './register'
+import { authenticate } from './authenticate'
+import { profile } from './profile'
+import { verifyJWT } from '../../middlewares/verify-jwt'
 
 /**
  * JWT: JSON Web Token
@@ -23,7 +23,7 @@ import { verifyJWT } from './middlewares/verify-jwt'
  * Header(cabeçalho): Authorization: Bearer JWT
  */
 
-export async function appRoutes(app: FastifyInstance) {
+export async function userRoutes(app: FastifyInstance) {
   app.post('/users', register)
 
   app.post('/sessions', authenticate)
